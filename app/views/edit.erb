@@ -7,6 +7,7 @@
 <h3>New recipe:</h3>
 <form method="post" action="/recipes/<%= @recipe.id %>">
   <input id="hidden" type="hidden" name="_method" value="patch">
+  <input type="text" name="name" placeholder="Name"><br>
   <input type="text" name="ingredients" placeholder="Ingredients"><br>
   <input type="text" name="cook_time" placeholder="Cook time"><br>
   <input type="submit" id="submit">
